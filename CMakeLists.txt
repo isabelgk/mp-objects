@@ -24,5 +24,6 @@ if (APPLE)
 endif()
 
 
+add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/source/projects/bonk_tilde")
 add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/source/projects/fiddle_tilde")
 add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/source/projects/sigmund_tilde")

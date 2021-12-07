@@ -3,6 +3,8 @@
 Popular Pure Data objects by Miller Puckette updated for 64-bit Windows,
 Intel Mac, and ARM Mac.
 
+Download from the GitHub releases page.
+
 ## Objects
 
 - `sigmund~`: sinusoidal analysis and pitch tracking

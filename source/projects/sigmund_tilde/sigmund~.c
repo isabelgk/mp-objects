@@ -34,9 +34,6 @@ typedef double t_samplearg;
 #define t_resizebytes(a, b, c) t_resizebytes((char *)(a), (b), (c))
 #endif
 
-#ifdef _MSC_VER /* this is only needed with Microsoft's compiler */
-__declspec(dllimport) extern
-#endif
 void mayer_realfft(int npoints, t_sample *buf);
 
 /* this routine is passed a buffer of npoints values, and returns the
@@ -255,7 +252,6 @@ static void sigmund_remask(int maxbin, int bestindex, t_sample powmask,
 #define PEAKTHRESHFACTOR 0.6
 
 
-#pragma mark GET RAW PEAKS -------------
 
 static void sigmund_getrawpeaks(int npts, t_sample *insamps,
     int npeak, t_peak *peakv, int *nfound, t_sample *power, t_sample srate, int loud,
@@ -797,7 +793,6 @@ static void notefinder_doit(t_notefinder *x, t_sample freq, t_sample power,
 }
 
 /**************** object structure for Pd and Max. *********************/ 
-#pragma mark MSP+ Pd Object structure ---------
 /* From here onward, the code is specific to eithr Pd, Max, or both.  If
 neither "PD 'nor "MSP" is defined, none of this is compiled, so that the
 whole file can be included in other, non-PD and non-Max projects.  */
@@ -993,7 +988,6 @@ static void sigmund_minpower(t_sigmund *x, t_samplearg f)
     x->x_minpower = f;
 }
 
-#pragma mark DO THE WORK + OUTPUT -------
 static void sigmund_doit(t_sigmund *x, int npts, t_sample *arraypoints,
     int loud, float srate)
 {
@@ -1072,7 +1066,6 @@ static void sigmund_dsp(t_sigmund *x, t_signal **sp)
 }
 
 
-#pragma mark DSP SETUP -------
 #ifdef MSP
 // vb, 64-bit dsp method
 void sigmund_perform64(t_sigmund *x, t_object *dsp64, double **ins, long numins, 
@@ -1125,7 +1118,6 @@ static void sigmund_free(t_sigmund *x)
 
 #endif /* PD or MSP */
 
-#pragma mark Pd GLUE --------------------
 /*************************** Glue for Pd ************************/
 #ifdef PD
 
@@ -1455,7 +1447,6 @@ void sigmund_tilde_setup(void)
 #endif /* PD */
 
 /************************ Max/MSP glue **********************************/
-#pragma mark MSP GLUE --------------------
 /* -------------------------- MSP glue ------------------------- */
 #ifdef MSP
 static void *sigmund_class;

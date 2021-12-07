@@ -9,6 +9,7 @@ Intel Mac, and ARM Mac.
 
 ## Credits
 
-- Miller Puckette --- original objects
-- Ted Apel --- 32-bit Max port [vud.org](http://vud.org/max/)
-- Volker Boehm --- 64-bit Max port
+- Miller Puckette - original objects
+- Ted Apel - 32-bit Max port [vud.org](http://vud.org/max/)
+- Volker Boehm - 64-bit Max ports
+  - [sigmund~](https://github.com/v7b1/sigmund_64bit-version)

@@ -1,0 +1,11 @@
+build/
+cmake-*/
+externals/
+
+*.zip
+
+.vs
+.vscode
+.idea
+.idea
+.cache

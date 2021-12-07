@@ -4,6 +4,7 @@ include_directories(
     "${MAX_SDK_INCLUDES}"
     "${MAX_SDK_MSP_INCLUDES}"
     "${MAX_SDK_JIT_INCLUDES}"
+    "${CMAKE_CURRENT_SOURCE_DIR}"
 )
 
 add_library(

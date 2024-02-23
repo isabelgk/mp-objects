@@ -1,5 +1,14 @@
 # mp-objects
 
+## Note!
+
+Volker Boem has now updated the objects for M1, so this repository is no longer necessary! Please go check out his repositories here:
+- Volker Boehm - 64-bit Max ports
+  - [sigmund~](https://github.com/v7b1/sigmund_64bit-version)
+  - [fiddle~](https://github.com/v7b1/fiddle_64bit_version)
+  - [bonk~](https://github.com/v7b1/bonk_64bit-version)
+
+
 Popular Pure Data objects by Miller Puckette updated for 64-bit Windows,
 Intel Mac, and ARM Mac.
 
